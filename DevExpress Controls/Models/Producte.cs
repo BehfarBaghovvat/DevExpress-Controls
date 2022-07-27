@@ -11,7 +11,7 @@
 
 		public int Quantity { get; set; }
 
-		public decimal Price { get; set; }
+		public long Price { get; set; }
 
 		public System.DateTime DateTime_Register { get; set; }
 

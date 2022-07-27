@@ -6,9 +6,9 @@ namespace DevExpress_Controls
 {
 	public partial class MainForm : DevExpress.XtraEditors.XtraForm
 	{
-		public Models.Producte producte = new Models.Producte();
+		public Models.Producte _entityProducte = new Models.Producte();
 
-
+		private bool _updateFile = false;
 
 		public MainForm()
 		{
@@ -22,6 +22,10 @@ namespace DevExpress_Controls
 		{
 			variableLabelControl.Text =
 				Infrastructure.Utility.CapacityVariables1();
+
+			addRegionUC1.captionLabel.Text = Infrastructure.Utility.GetRegionName(addRegionUC1.RegionID);
+
+			addRegionUC1.RefreshData();
 		}
 
 
@@ -59,7 +63,7 @@ namespace DevExpress_Controls
 			}
 			else
 			{
-				producte.Product_Name = productNameTextEdit.Text;
+				_entityProducte.Product_Name = productNameTextEdit.Text;
 			}
 		}
 
@@ -81,9 +85,17 @@ namespace DevExpress_Controls
 			}
 			else
 			{
-				producte.Quantity = int.Parse(quantityTextEdit.Text);
 
-				quantityTextEdit.Text = $"{producte.Quantity:#,0}";
+				if (quantityTextEdit.Text.Contains(','))
+				{
+					_entityProducte.Quantity = int.Parse(quantityTextEdit.Text.Replace(",", string.Empty).Trim());
+					quantityTextEdit.Text = $"{_entityProducte.Quantity:#,0}";
+				}
+				else
+				{
+					_entityProducte.Quantity = int.Parse(quantityTextEdit.Text.Replace(",", string.Empty).Trim());
+					quantityTextEdit.Text = $"{_entityProducte.Quantity:#,0}";
+				}
 			}
 		}
 
@@ -107,15 +119,15 @@ namespace DevExpress_Controls
 			{
 				if (priceTextEdit.Text.Contains("تومان"))
 				{
-					producte.Price = int.Parse(priceTextEdit.Text.Replace("تومان", string.Empty).Trim());
+					_entityProducte.Price = long.Parse(priceTextEdit.Text.Replace("تومان", string.Empty).Replace(",", string.Empty).Trim());
 
-					priceTextEdit.Text = $"{producte.Price:#,0} تومان";
+					priceTextEdit.Text = $"{_entityProducte.Price:#,0} تومان";
 				}
 				else
 				{
-					producte.Price = int.Parse(priceTextEdit.Text.Trim());
+					_entityProducte.Price = long.Parse(priceTextEdit.Text.Trim());
 
-					priceTextEdit.Text = $"{producte.Price:#,0} تومان";
+					priceTextEdit.Text = $"{_entityProducte.Price:#,0} تومان";
 				}
 
 
@@ -125,20 +137,20 @@ namespace DevExpress_Controls
 
 		private void EntityStatusCheckEdit_CheckedChanged(object sender, System.EventArgs e)
 		{
-			producte.Entity_Status = entityStatusCheckEdit.Checked;
+			_entityProducte.Entity_Status = entityStatusCheckEdit.Checked;
 		}
 
 		private void RegisterButton_Click(object sender, System.EventArgs e)
 		{
-			if (ValidationControls(producte))
+			if (ValidationControls(_entityProducte))
 			{
-				RegisterProducte(producte);
+				RegisterProducte(_entityProducte, _updateFile);
 			}
 		}
 
 		private void NewButton_Click(object sender, System.EventArgs e)
 		{
-
+			ResetControls();
 		}
 
 		private void DeleteRepository_Click(object sender, System.EventArgs e)
@@ -306,9 +318,10 @@ namespace DevExpress_Controls
 			}
 		}
 
-		private void RegisterProducte(Models.Producte producte)
+		private void RegisterProducte(Models.Producte producte, bool updateFile)
 		{
 			Models.DataBaseContext dataBaseContext = null;
+
 
 			try
 			{
@@ -320,35 +333,59 @@ namespace DevExpress_Controls
 					.Where(current => string.Compare(current.Product_Name, producte.Product_Name) == 0)
 					.FirstOrDefault();
 
-				if (newProduct != null)//--> یعنی کالا در سیستم موجود می باشد!
+				if (!updateFile)
 				{
-					System.Windows.Forms.MessageBox.Show("کالای ثبت شده در سیستم موجود می باشد.");
-					productNameTextEdit.Focus();
-					return;
+					if (newProduct != null)//--> یعنی کالا در سیستم موجود می باشد!
+					{
+						System.Windows.Forms.MessageBox.Show("کالای ثبت شده در سیستم موجود می باشد.");
+						productNameTextEdit.Focus();
+						return;
+					}
+					else
+					{
 
+
+						newProduct = new Models.Producte
+						{
+							Is_Active = true,
+							Product_Name = producte.Product_Name,
+							Quantity = producte.Quantity,
+							Price = producte.Price,
+							Entity_Status = producte.Entity_Status,
+							DateTime_Register = System.DateTime.Now,
+						};
+
+						dataBaseContext.Productes.Add(newProduct);
+						dataBaseContext.SaveChanges();
+
+						System.Windows.Forms.MessageBox.Show("ثبت کالا با موفقیت انجام گردید.");
+
+						LoadingProducte();
+
+						ResetControls();
+					}
 				}
 				else
 				{
-					newProduct = new Models.Producte
-					{
-						Is_Active = true,
-						Product_Name = producte.Product_Name,
-						Quantity = producte.Quantity,
-						Price = producte.Price,
-						Entity_Status = producte.Entity_Status,
-						DateTime_Register = System.DateTime.Now,
-					};
-
-					dataBaseContext.Productes.Add(newProduct);
+					newProduct.Is_Active = true;
+					newProduct.Product_Name = producte.Product_Name;
+					newProduct.Quantity = producte.Quantity;
+					newProduct.Price = producte.Price;
+					newProduct.Entity_Status = producte.Entity_Status;
+					newProduct.DateTime_Register = System.DateTime.Now;
 
 					dataBaseContext.SaveChanges();
 
-					System.Windows.Forms.MessageBox.Show("ثبت کالا با موفقیت انجام گردید.");
+					System.Windows.Forms.MessageBox.Show("ثبت کالا با به روز رسانی شد انجام گردید.");
 
 					LoadingProducte();
 
 					ResetControls();
+
+					_updateFile = false;
 				}
+
+
 			}
 			catch (System.Exception ex)
 			{
@@ -363,6 +400,10 @@ namespace DevExpress_Controls
 					dataBaseContext = null;
 				}
 			}
+
+
+
+
 		}
 
 		public void ResetControls()
@@ -438,6 +479,15 @@ namespace DevExpress_Controls
 			}
 		}
 
-		
+		private void ProductListGridView_DoubleClick(object sender, EventArgs e)
+		{
+			productNameTextEdit.Text = productListGridView.GetFocusedRowCellValue("Product_Name").ToString();
+			quantityTextEdit.Text = productListGridView.GetFocusedRowCellValue("Quantity").ToString();
+			priceTextEdit.Text = productListGridView.GetFocusedRowCellValue("Price").ToString();
+
+			registerButton.Text = "به روز رسانی";
+
+			_updateFile = true;
+		}
 	}
 }

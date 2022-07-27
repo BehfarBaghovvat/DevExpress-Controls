@@ -1,4 +1,6 @@
-﻿namespace Infrastructure
+﻿using System.Linq;
+
+namespace Infrastructure
 {
 	public static class Utility
 	{
@@ -602,6 +604,36 @@
 			return timeNow;
 		}
 		#endregion /ShowTime
+
+		public static string GetRegionName(int regionID)
+		{
+			Models.DataBaseContext dataBaseContext;
+
+			try
+			{
+				dataBaseContext =
+					new Models.DataBaseContext();
+
+				Models.Region region =
+					dataBaseContext.Regions
+					.Where(current => current.Region_Id == regionID)
+					.FirstOrDefault();
+
+				if (region != null)
+				{
+					return region.Region_Name;
+				}
+				else
+				{
+					return null;
+				}
+			}
+			catch (System.Exception)
+			{
+
+				throw;
+			}
+		}
 		
 	}
 }

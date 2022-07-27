@@ -30,17 +30,17 @@ namespace DevExpress_Controls
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+			DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions19 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject73 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject74 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject75 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject76 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions20 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject77 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject78 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject79 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject80 = new DevExpress.Utils.SerializableAppearanceObject();
 			this.mainTabPane = new DevExpress.XtraBars.Navigation.TabPane();
 			this.listVariableNumricTabNavigationPage = new DevExpress.XtraBars.Navigation.TabNavigationPage();
 			this.variableLabelControl = new DevExpress.XtraEditors.LabelControl();
@@ -68,7 +68,21 @@ namespace DevExpress_Controls
 			this.quantityTextEdit = new DevExpress.XtraEditors.TextEdit();
 			this.productNameTextEdit = new DevExpress.XtraEditors.TextEdit();
 			this.customerTabNavigationPage = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-			this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+			this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+			this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+			this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+			this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+			this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+			this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+			this.registerPositionTabNavigationPage = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+			this.countryNameCheckedListBoxControl = new DevExpress.XtraEditors.CheckedListBoxControl();
+			this.countryNameLabelControl = new DevExpress.XtraEditors.LabelControl();
+			this.saveCountryButton = new System.Windows.Forms.Button();
+			this.countryNameTextEdit = new DevExpress.XtraEditors.TextEdit();
+			this.addRegionUC1 = new User_Control.addRegionUC();
 			((System.ComponentModel.ISupportInitialize)(this.mainTabPane)).BeginInit();
 			this.mainTabPane.SuspendLayout();
 			this.listVariableNumricTabNavigationPage.SuspendLayout();
@@ -83,7 +97,15 @@ namespace DevExpress_Controls
 			((System.ComponentModel.ISupportInitialize)(this.priceTextEdit.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.quantityTextEdit.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.productNameTextEdit.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
+			this.customerTabNavigationPage.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+			this.registerPositionTabNavigationPage.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.countryNameCheckedListBoxControl)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.countryNameTextEdit.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// mainTabPane
@@ -91,6 +113,7 @@ namespace DevExpress_Controls
 			this.mainTabPane.Controls.Add(this.listVariableNumricTabNavigationPage);
 			this.mainTabPane.Controls.Add(this.productRegisterTabNavigationPage);
 			this.mainTabPane.Controls.Add(this.customerTabNavigationPage);
+			this.mainTabPane.Controls.Add(this.registerPositionTabNavigationPage);
 			this.mainTabPane.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.mainTabPane.Font = new System.Drawing.Font("Tahoma", 8F);
 			this.mainTabPane.Location = new System.Drawing.Point(0, 0);
@@ -98,7 +121,8 @@ namespace DevExpress_Controls
 			this.mainTabPane.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.listVariableNumricTabNavigationPage,
             this.productRegisterTabNavigationPage,
-            this.customerTabNavigationPage});
+            this.customerTabNavigationPage,
+            this.registerPositionTabNavigationPage});
 			this.mainTabPane.RegularSize = new System.Drawing.Size(800, 450);
 			this.mainTabPane.SelectedPage = this.listVariableNumricTabNavigationPage;
 			this.mainTabPane.Size = new System.Drawing.Size(800, 450);
@@ -121,9 +145,9 @@ namespace DevExpress_Controls
 			this.variableLabelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
 			this.variableLabelControl.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
 			this.variableLabelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-			this.variableLabelControl.Location = new System.Drawing.Point(289, 14);
+			this.variableLabelControl.Location = new System.Drawing.Point(72, 14);
 			this.variableLabelControl.Name = "variableLabelControl";
-			this.variableLabelControl.Size = new System.Drawing.Size(222, 394);
+			this.variableLabelControl.Size = new System.Drawing.Size(657, 394);
 			this.variableLabelControl.TabIndex = 0;
 			// 
 			// productRegisterTabNavigationPage
@@ -182,6 +206,7 @@ namespace DevExpress_Controls
 			this.productListGridView.Name = "productListGridView";
 			this.productListGridView.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
 			this.productListGridView.OptionsView.ShowGroupPanel = false;
+			this.productListGridView.DoubleClick += new System.EventHandler(this.ProductListGridView_DoubleClick);
 			// 
 			// colEntity_Status
 			// 
@@ -211,7 +236,9 @@ namespace DevExpress_Controls
 			this.colProduct_Name.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
 			this.colProduct_Name.Caption = "نام کالا";
 			this.colProduct_Name.FieldName = "Product_Name";
+			this.colProduct_Name.GroupFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
 			this.colProduct_Name.Name = "colProduct_Name";
+			this.colProduct_Name.OptionsColumn.AllowEdit = false;
 			this.colProduct_Name.OptionsColumn.AllowMove = false;
 			this.colProduct_Name.OptionsEditForm.UseEditorColRowSpan = false;
 			this.colProduct_Name.Visible = true;
@@ -293,9 +320,9 @@ namespace DevExpress_Controls
 			this.deleteRepository.AppearanceFocused.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
 			this.deleteRepository.AppearanceFocused.Options.UseForeColor = true;
 			this.deleteRepository.AutoHeight = false;
-			editorButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions1.SvgImage")));
+			editorButtonImageOptions19.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions19.SvgImage")));
 			this.deleteRepository.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions19, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject73, serializableAppearanceObject74, serializableAppearanceObject75, serializableAppearanceObject76, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
 			this.deleteRepository.Name = "deleteRepository";
 			this.deleteRepository.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
 			this.deleteRepository.Click += new System.EventHandler(this.DeleteRepository_Click);
@@ -316,9 +343,9 @@ namespace DevExpress_Controls
 			// deactiveRepository
 			// 
 			this.deactiveRepository.AutoHeight = false;
-			editorButtonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions2.SvgImage")));
+			editorButtonImageOptions20.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions20.SvgImage")));
 			this.deactiveRepository.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions20, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject77, serializableAppearanceObject78, serializableAppearanceObject79, serializableAppearanceObject80, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
 			this.deactiveRepository.Name = "deactiveRepository";
 			this.deactiveRepository.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
 			this.deactiveRepository.Click += new System.EventHandler(this.DeactiveRepository_Click);
@@ -329,7 +356,7 @@ namespace DevExpress_Controls
 			this.selectAllCheckEdit.Name = "selectAllCheckEdit";
 			this.selectAllCheckEdit.Properties.Caption = "انتخاب همه";
 			this.selectAllCheckEdit.Size = new System.Drawing.Size(84, 19);
-			this.selectAllCheckEdit.TabIndex = 7;
+			this.selectAllCheckEdit.TabIndex = 6;
 			// 
 			// newButton
 			// 
@@ -339,7 +366,7 @@ namespace DevExpress_Controls
 			this.newButton.Location = new System.Drawing.Point(104, 102);
 			this.newButton.Name = "newButton";
 			this.newButton.Size = new System.Drawing.Size(88, 31);
-			this.newButton.TabIndex = 6;
+			this.newButton.TabIndex = 5;
 			this.newButton.Text = "کالای جدید";
 			this.newButton.UseCompatibleTextRendering = true;
 			this.newButton.UseVisualStyleBackColor = true;
@@ -354,7 +381,7 @@ namespace DevExpress_Controls
 			this.registerButton.Location = new System.Drawing.Point(12, 102);
 			this.registerButton.Name = "registerButton";
 			this.registerButton.Size = new System.Drawing.Size(86, 31);
-			this.registerButton.TabIndex = 3;
+			this.registerButton.TabIndex = 4;
 			this.registerButton.Text = "ثبت کالا";
 			this.registerButton.UseCompatibleTextRendering = true;
 			this.registerButton.UseVisualStyleBackColor = true;
@@ -366,7 +393,7 @@ namespace DevExpress_Controls
 			this.entityStatusCheckEdit.Name = "entityStatusCheckEdit";
 			this.entityStatusCheckEdit.Properties.Caption = "وضعیت موجودی";
 			this.entityStatusCheckEdit.Size = new System.Drawing.Size(108, 19);
-			this.entityStatusCheckEdit.TabIndex = 2;
+			this.entityStatusCheckEdit.TabIndex = 3;
 			this.entityStatusCheckEdit.CheckedChanged += new System.EventHandler(this.EntityStatusCheckEdit_CheckedChanged);
 			// 
 			// priceLabelControl
@@ -398,7 +425,7 @@ namespace DevExpress_Controls
 			this.priceTextEdit.Location = new System.Drawing.Point(266, 38);
 			this.priceTextEdit.Name = "priceTextEdit";
 			this.priceTextEdit.Size = new System.Drawing.Size(160, 20);
-			this.priceTextEdit.TabIndex = 0;
+			this.priceTextEdit.TabIndex = 2;
 			this.priceTextEdit.TextChanged += new System.EventHandler(this.PriceTextEdit_TextChanged);
 			this.priceTextEdit.Enter += new System.EventHandler(this.PriceTextEdit_Enter);
 			this.priceTextEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PriceTextEdit_KeyPress);
@@ -408,7 +435,7 @@ namespace DevExpress_Controls
 			this.quantityTextEdit.Location = new System.Drawing.Point(432, 38);
 			this.quantityTextEdit.Name = "quantityTextEdit";
 			this.quantityTextEdit.Size = new System.Drawing.Size(167, 20);
-			this.quantityTextEdit.TabIndex = 0;
+			this.quantityTextEdit.TabIndex = 1;
 			this.quantityTextEdit.TextChanged += new System.EventHandler(this.QuantityTextEdit_TextChanged);
 			this.quantityTextEdit.Enter += new System.EventHandler(this.QuantityTextEdit_Enter);
 			this.quantityTextEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.QuantityTextEdit_KeyPress);
@@ -426,8 +453,147 @@ namespace DevExpress_Controls
 			// customerTabNavigationPage
 			// 
 			this.customerTabNavigationPage.Caption = "مشتری";
+			this.customerTabNavigationPage.Controls.Add(this.lookUpEdit1);
+			this.customerTabNavigationPage.Controls.Add(this.labelControl4);
+			this.customerTabNavigationPage.Controls.Add(this.labelControl3);
+			this.customerTabNavigationPage.Controls.Add(this.labelControl2);
+			this.customerTabNavigationPage.Controls.Add(this.textEdit4);
+			this.customerTabNavigationPage.Controls.Add(this.labelControl1);
+			this.customerTabNavigationPage.Controls.Add(this.textEdit3);
+			this.customerTabNavigationPage.Controls.Add(this.textEdit2);
+			this.customerTabNavigationPage.Controls.Add(this.textEdit1);
 			this.customerTabNavigationPage.Name = "customerTabNavigationPage";
 			this.customerTabNavigationPage.Size = new System.Drawing.Size(800, 423);
+			// 
+			// lookUpEdit1
+			// 
+			this.lookUpEdit1.Location = new System.Drawing.Point(504, 64);
+			this.lookUpEdit1.Name = "lookUpEdit1";
+			this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.lookUpEdit1.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
+			this.lookUpEdit1.Size = new System.Drawing.Size(272, 20);
+			this.lookUpEdit1.TabIndex = 2;
+			// 
+			// labelControl4
+			// 
+			this.labelControl4.Location = new System.Drawing.Point(559, 90);
+			this.labelControl4.Name = "labelControl4";
+			this.labelControl4.Size = new System.Drawing.Size(47, 13);
+			this.labelControl4.TabIndex = 1;
+			this.labelControl4.Text = "شهرستان";
+			// 
+			// labelControl3
+			// 
+			this.labelControl3.Location = new System.Drawing.Point(669, 90);
+			this.labelControl3.Name = "labelControl3";
+			this.labelControl3.Size = new System.Drawing.Size(28, 13);
+			this.labelControl3.TabIndex = 1;
+			this.labelControl3.Text = "استان";
+			// 
+			// labelControl2
+			// 
+			this.labelControl2.Location = new System.Drawing.Point(750, 90);
+			this.labelControl2.Name = "labelControl2";
+			this.labelControl2.Size = new System.Drawing.Size(26, 13);
+			this.labelControl2.TabIndex = 1;
+			this.labelControl2.Text = "کشور";
+			// 
+			// textEdit4
+			// 
+			this.textEdit4.Location = new System.Drawing.Point(504, 109);
+			this.textEdit4.Name = "textEdit4";
+			this.textEdit4.Size = new System.Drawing.Size(107, 20);
+			this.textEdit4.TabIndex = 0;
+			// 
+			// labelControl1
+			// 
+			this.labelControl1.Location = new System.Drawing.Point(694, 19);
+			this.labelControl1.Name = "labelControl1";
+			this.labelControl1.Size = new System.Drawing.Size(82, 13);
+			this.labelControl1.TabIndex = 1;
+			this.labelControl1.Text = "نام و نام خانوادگی";
+			// 
+			// textEdit3
+			// 
+			this.textEdit3.Location = new System.Drawing.Point(617, 109);
+			this.textEdit3.Name = "textEdit3";
+			this.textEdit3.Size = new System.Drawing.Size(80, 20);
+			this.textEdit3.TabIndex = 0;
+			// 
+			// textEdit2
+			// 
+			this.textEdit2.Location = new System.Drawing.Point(703, 109);
+			this.textEdit2.Name = "textEdit2";
+			this.textEdit2.Size = new System.Drawing.Size(73, 20);
+			this.textEdit2.TabIndex = 0;
+			// 
+			// textEdit1
+			// 
+			this.textEdit1.Location = new System.Drawing.Point(567, 38);
+			this.textEdit1.Name = "textEdit1";
+			this.textEdit1.Size = new System.Drawing.Size(209, 20);
+			this.textEdit1.TabIndex = 0;
+			// 
+			// registerPositionTabNavigationPage
+			// 
+			this.registerPositionTabNavigationPage.Caption = "ثبت موقعیت";
+			this.registerPositionTabNavigationPage.Controls.Add(this.addRegionUC1);
+			this.registerPositionTabNavigationPage.Controls.Add(this.countryNameCheckedListBoxControl);
+			this.registerPositionTabNavigationPage.Controls.Add(this.countryNameLabelControl);
+			this.registerPositionTabNavigationPage.Controls.Add(this.saveCountryButton);
+			this.registerPositionTabNavigationPage.Controls.Add(this.countryNameTextEdit);
+			this.registerPositionTabNavigationPage.Name = "registerPositionTabNavigationPage";
+			this.registerPositionTabNavigationPage.Size = new System.Drawing.Size(800, 423);
+			// 
+			// countryNameCheckedListBoxControl
+			// 
+			this.countryNameCheckedListBoxControl.CheckMode = DevExpress.XtraEditors.CheckMode.Single;
+			this.countryNameCheckedListBoxControl.Location = new System.Drawing.Point(615, 62);
+			this.countryNameCheckedListBoxControl.Name = "countryNameCheckedListBoxControl";
+			this.countryNameCheckedListBoxControl.Size = new System.Drawing.Size(173, 349);
+			this.countryNameCheckedListBoxControl.TabIndex = 4;
+			// 
+			// countryNameLabelControl
+			// 
+			this.countryNameLabelControl.Location = new System.Drawing.Point(742, 17);
+			this.countryNameLabelControl.Name = "countryNameLabelControl";
+			this.countryNameLabelControl.Size = new System.Drawing.Size(46, 13);
+			this.countryNameLabelControl.TabIndex = 3;
+			this.countryNameLabelControl.Text = "نام کشور:";
+			// 
+			// saveCountryButton
+			// 
+			this.saveCountryButton.BackColor = System.Drawing.Color.Transparent;
+			this.saveCountryButton.FlatAppearance.BorderSize = 0;
+			this.saveCountryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.saveCountryButton.ForeColor = System.Drawing.Color.White;
+			this.saveCountryButton.Image = ((System.Drawing.Image)(resources.GetObject("saveCountryButton.Image")));
+			this.saveCountryButton.Location = new System.Drawing.Point(589, 35);
+			this.saveCountryButton.Name = "saveCountryButton";
+			this.saveCountryButton.Size = new System.Drawing.Size(20, 20);
+			this.saveCountryButton.TabIndex = 2;
+			this.saveCountryButton.UseVisualStyleBackColor = false;
+			// 
+			// countryNameTextEdit
+			// 
+			this.countryNameTextEdit.Location = new System.Drawing.Point(615, 36);
+			this.countryNameTextEdit.Name = "countryNameTextEdit";
+			this.countryNameTextEdit.Size = new System.Drawing.Size(173, 20);
+			this.countryNameTextEdit.TabIndex = 1;
+			// 
+			// addRegionUC1
+			// 
+			this.addRegionUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+			this.addRegionUC1.BackColorCaption = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+			this.addRegionUC1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.addRegionUC1.ForeColor = System.Drawing.Color.White;
+			this.addRegionUC1.Location = new System.Drawing.Point(366, 39);
+			this.addRegionUC1.Name = "addRegionUC1";
+			this.addRegionUC1.RegionID = 1;
+			this.addRegionUC1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.addRegionUC1.Size = new System.Drawing.Size(193, 118);
+			this.addRegionUC1.TabIndex = 5;
 			// 
 			// MainForm
 			// 
@@ -455,7 +621,17 @@ namespace DevExpress_Controls
 			((System.ComponentModel.ISupportInitialize)(this.priceTextEdit.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.quantityTextEdit.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.productNameTextEdit.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
+			this.customerTabNavigationPage.ResumeLayout(false);
+			this.customerTabNavigationPage.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+			this.registerPositionTabNavigationPage.ResumeLayout(false);
+			this.registerPositionTabNavigationPage.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.countryNameCheckedListBoxControl)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.countryNameTextEdit.Properties)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -487,9 +663,23 @@ namespace DevExpress_Controls
 		private DevExpress.XtraGrid.Columns.GridColumn colEntity_Status;
 		private DevExpress.XtraGrid.Columns.GridColumn colDelete;
 		private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit deleteRepository;
-		private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
 		private DevExpress.XtraGrid.Columns.GridColumn colDeactive;
 		private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit deactiveRepository;
+		private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+		private DevExpress.XtraEditors.LabelControl labelControl4;
+		private DevExpress.XtraEditors.LabelControl labelControl3;
+		private DevExpress.XtraEditors.LabelControl labelControl2;
+		private DevExpress.XtraEditors.TextEdit textEdit4;
+		private DevExpress.XtraEditors.LabelControl labelControl1;
+		private DevExpress.XtraEditors.TextEdit textEdit3;
+		private DevExpress.XtraEditors.TextEdit textEdit2;
+		private DevExpress.XtraEditors.TextEdit textEdit1;
+		private DevExpress.XtraBars.Navigation.TabNavigationPage registerPositionTabNavigationPage;
+		private DevExpress.XtraEditors.CheckedListBoxControl countryNameCheckedListBoxControl;
+		private DevExpress.XtraEditors.LabelControl countryNameLabelControl;
+		private System.Windows.Forms.Button saveCountryButton;
+		private DevExpress.XtraEditors.TextEdit countryNameTextEdit;
+		private User_Control.addRegionUC addRegionUC1;
 	}
 }
 
