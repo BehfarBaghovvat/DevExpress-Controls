@@ -30,17 +30,17 @@ namespace DevExpress_Controls
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions19 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+			DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject73 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject74 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject75 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject76 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions20 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject77 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject78 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject79 = new DevExpress.Utils.SerializableAppearanceObject();
-			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject80 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+			DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
 			this.mainTabPane = new DevExpress.XtraBars.Navigation.TabPane();
 			this.listVariableNumricTabNavigationPage = new DevExpress.XtraBars.Navigation.TabNavigationPage();
 			this.variableLabelControl = new DevExpress.XtraEditors.LabelControl();
@@ -78,11 +78,11 @@ namespace DevExpress_Controls
 			this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
 			this.registerPositionTabNavigationPage = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+			this.addRegionUC1 = new User_Control.addRegionUC();
 			this.countryNameCheckedListBoxControl = new DevExpress.XtraEditors.CheckedListBoxControl();
 			this.countryNameLabelControl = new DevExpress.XtraEditors.LabelControl();
 			this.saveCountryButton = new System.Windows.Forms.Button();
 			this.countryNameTextEdit = new DevExpress.XtraEditors.TextEdit();
-			this.addRegionUC1 = new User_Control.addRegionUC();
 			((System.ComponentModel.ISupportInitialize)(this.mainTabPane)).BeginInit();
 			this.mainTabPane.SuspendLayout();
 			this.listVariableNumricTabNavigationPage.SuspendLayout();
@@ -320,9 +320,9 @@ namespace DevExpress_Controls
 			this.deleteRepository.AppearanceFocused.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
 			this.deleteRepository.AppearanceFocused.Options.UseForeColor = true;
 			this.deleteRepository.AutoHeight = false;
-			editorButtonImageOptions19.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions19.SvgImage")));
+			editorButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions1.SvgImage")));
 			this.deleteRepository.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions19, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject73, serializableAppearanceObject74, serializableAppearanceObject75, serializableAppearanceObject76, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
 			this.deleteRepository.Name = "deleteRepository";
 			this.deleteRepository.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
 			this.deleteRepository.Click += new System.EventHandler(this.DeleteRepository_Click);
@@ -343,9 +343,9 @@ namespace DevExpress_Controls
 			// deactiveRepository
 			// 
 			this.deactiveRepository.AutoHeight = false;
-			editorButtonImageOptions20.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions20.SvgImage")));
+			editorButtonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions2.SvgImage")));
 			this.deactiveRepository.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions20, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject77, serializableAppearanceObject78, serializableAppearanceObject79, serializableAppearanceObject80, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
 			this.deactiveRepository.Name = "deactiveRepository";
 			this.deactiveRepository.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
 			this.deactiveRepository.Click += new System.EventHandler(this.DeactiveRepository_Click);
@@ -546,6 +546,19 @@ namespace DevExpress_Controls
 			this.registerPositionTabNavigationPage.Name = "registerPositionTabNavigationPage";
 			this.registerPositionTabNavigationPage.Size = new System.Drawing.Size(800, 423);
 			// 
+			// addRegionUC1
+			// 
+			this.addRegionUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+			this.addRegionUC1.BackColorCaption = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+			this.addRegionUC1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.addRegionUC1.ForeColor = System.Drawing.Color.White;
+			this.addRegionUC1.Location = new System.Drawing.Point(390, 35);
+			this.addRegionUC1.Name = "addRegionUC1";
+			this.addRegionUC1.RegionID = 1;
+			this.addRegionUC1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.addRegionUC1.Size = new System.Drawing.Size(193, 177);
+			this.addRegionUC1.TabIndex = 5;
+			// 
 			// countryNameCheckedListBoxControl
 			// 
 			this.countryNameCheckedListBoxControl.CheckMode = DevExpress.XtraEditors.CheckMode.Single;
@@ -581,19 +594,6 @@ namespace DevExpress_Controls
 			this.countryNameTextEdit.Name = "countryNameTextEdit";
 			this.countryNameTextEdit.Size = new System.Drawing.Size(173, 20);
 			this.countryNameTextEdit.TabIndex = 1;
-			// 
-			// addRegionUC1
-			// 
-			this.addRegionUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-			this.addRegionUC1.BackColorCaption = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-			this.addRegionUC1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.addRegionUC1.ForeColor = System.Drawing.Color.White;
-			this.addRegionUC1.Location = new System.Drawing.Point(366, 39);
-			this.addRegionUC1.Name = "addRegionUC1";
-			this.addRegionUC1.RegionID = 1;
-			this.addRegionUC1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.addRegionUC1.Size = new System.Drawing.Size(193, 118);
-			this.addRegionUC1.TabIndex = 5;
 			// 
 			// MainForm
 			// 

@@ -117,31 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="countryNameCheckedListBoxControl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="countryNameLabelControl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="saveCountryButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAPdJREFUOE9j
-        2Dh7j/j6eYdiQHjTomPJqxYdrF62/OBcdLx0+d5pc+Zs0WFABmvmHAq4c/XTfxA+d+TV/717b/5/+PoT
-        HN95/u7/9Uev/j949en/rp1XXmxbeMwQqhWL5n23UDTvPH7p/6TFG8HsY8fv/z9z6NG9rUtPGZClGaTu
-        zOGH15dO2StPkrOPHYNoBmGQPhTNty59+H/+xPP/hw7cxcBHj9z7f+PSO9yaScEoms9dfPD/Ach5BDBI
-        HYbmO/de/icGgNRh1fzn3///X37jxiB52mgmBgwSm+f07RBaPnmf34ol+ytWrzzQRgiD1IHUz+nbIQQA
-        Bf/m20krsdgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <metadata name="countryNameTextEdit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="producteBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <assembly alias="DevExpress.Data.v20.1" name="DevExpress.Data.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="editorButtonImageOptions19.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="editorButtonImageOptions1.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS42
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -162,7 +142,7 @@
         LDE2eiIgY2xhc3M9IlJlZCIgLz4NCiAgICA8L2c+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="editorButtonImageOptions20.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="editorButtonImageOptions2.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS42
         LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
@@ -186,4 +166,24 @@
         MUg4djJoMTBWMjN6IiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
+  <metadata name="countryNameCheckedListBoxControl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="countryNameLabelControl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="saveCountryButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAPdJREFUOE9j
+        2Dh7j/j6eYdiQHjTomPJqxYdrF62/OBcdLx0+d5pc+Zs0WFABmvmHAq4c/XTfxA+d+TV/717b/5/+PoT
+        HN95/u7/9Uev/j949en/rp1XXmxbeMwQqhWL5n23UDTvPH7p/6TFG8HsY8fv/z9z6NG9rUtPGZClGaTu
+        zOGH15dO2StPkrOPHYNoBmGQPhTNty59+H/+xPP/hw7cxcBHj9z7f+PSO9yaScEoms9dfPD/Ach5BDBI
+        HYbmO/de/icGgNRh1fzn3///X37jxiB52mgmBgwSm+f07RBaPnmf34ol+ytWrzzQRgiD1IHUz+nbIQQA
+        Bf/m20krsdgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="countryNameTextEdit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

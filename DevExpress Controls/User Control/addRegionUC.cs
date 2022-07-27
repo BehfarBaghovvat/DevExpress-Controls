@@ -219,21 +219,21 @@ namespace User_Control
 			}
 			else if (_regionID == 4)
 			{
-				System.Collections.Generic.List<Models.Country> listCountries = null;
+				System.Collections.Generic.List<Models.Area> listAreas = null;
 
-				listCountries =
-					dataBaseContext.Countries
-					.OrderBy(current => current.Country_Id)
+				listAreas =
+					dataBaseContext.Areas
+					.OrderBy(current => current.Area_Id)
 					.ToList();
 
-				count = listCountries.Count();
+				count = listAreas.Count();
 
-				Models.Country country =
-					dataBaseContext.Countries
-					.Where(current => string.Compare(current.Country_Name, inputValue) == 0)
+				Models.Area area =
+					dataBaseContext.Areas
+					.Where(current => string.Compare(current.Area_Name, inputValue) == 0)
 					.FirstOrDefault();
 
-				if (country != null)
+				if (area != null)
 				{
 					System.Windows.Forms.MessageBox.Show($"نام {inputValue} در لیست کشور ها موجود است");
 					inputTextBox.Focus();
@@ -241,14 +241,14 @@ namespace User_Control
 				}
 				else
 				{
-					country =
-						new Models.Country
+					area =
+						new Models.Area
 						{
-							Country_Id = count + 1,
-							Country_Name = inputValue,
+							Area_Id = count + 1,
+							Area_Name = inputValue,
 						};
 
-					dataBaseContext.Countries.Add(country);
+					dataBaseContext.Areas.Add(area);
 					dataBaseContext.SaveChanges();
 
 					System.Windows.Forms.MessageBox.Show($"نام {inputValue} ثبت گردید.");
@@ -260,7 +260,7 @@ namespace User_Control
 			}
 			else
 			{
-
+				System.Windows.Forms.MessageBox.Show($"شناسه درج شده در سیستم موجود نمیباشد.");
 			}
 		}
 
@@ -287,19 +287,49 @@ namespace User_Control
 			}
 			else if (_regionID == 2)
 			{
+				System.Collections.Generic.List<Models.State> listStates = null;
 
+				listStates =
+					dataBaseContext.States
+					.OrderBy(current => current.State_Id)
+					.ToList();
+
+				regionNameCheckedListBoxControl.DataSource = listStates;
+
+				regionNameCheckedListBoxControl.ValueMember = "State_Id";
+				regionNameCheckedListBoxControl.DisplayMember = "State_Name";
 			}
 			else if (_regionID == 3)
 			{
+				System.Collections.Generic.List<Models.City> listSities = null;
 
+				listSities =
+					dataBaseContext.Cities
+					.OrderBy(current => current.City_Id)
+					.ToList();
+
+				regionNameCheckedListBoxControl.DataSource = listSities;
+
+				regionNameCheckedListBoxControl.ValueMember = "City_Id";
+				regionNameCheckedListBoxControl.DisplayMember = "City_Name";
 			}
 			else if (_regionID == 4)
 			{
+				System.Collections.Generic.List<Models.Area> listAreas = null;
 
+				listAreas =
+					dataBaseContext.Areas
+					.OrderBy(current => current.Area_Id)
+					.ToList();
+
+				regionNameCheckedListBoxControl.DataSource = listAreas;
+
+				regionNameCheckedListBoxControl.ValueMember = "Area_Id";
+				regionNameCheckedListBoxControl.DisplayMember = "Area_Name";
 			}
 			else
 			{
-
+				return;
 			}
 		}
 	}
