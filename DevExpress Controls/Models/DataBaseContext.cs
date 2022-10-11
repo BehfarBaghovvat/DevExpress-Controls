@@ -15,6 +15,8 @@
 
 		//public System.Data.Entity.DbSet<> {get; set;}
 
+		public System.Data.Entity.DbSet<AccountParty> AccountParties { get; set; }
+
 		public System.Data.Entity.DbSet<Area> Areas {get; set;}
 
 		public System.Data.Entity.DbSet<City> Cities { get; set; }

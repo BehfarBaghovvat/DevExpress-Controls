@@ -118,14 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="saveButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="searchButton.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAPdJREFUOE9j
-        2Dh7j/j6eYdiQHjTomPJqxYdrF62/OBcdLx0+d5pc+Zs0WFABmvmHAq4c/XTfxA+d+TV/717b/5/+PoT
-        HN95/u7/9Uev/j949en/rp1XXmxbeMwQqhWL5n23UDTvPH7p/6TFG8HsY8fv/z9z6NG9rUtPGZClGaTu
-        zOGH15dO2StPkrOPHYNoBmGQPhTNty59+H/+xPP/hw7cxcBHj9z7f+PSO9yaScEoms9dfPD/Ach5BDBI
-        HYbmO/de/icGgNRh1fzn3///X37jxiB52mgmBgwSm+f07RBaPnmf34ol+ytWrzzQRgiD1IHUz+nbIQQA
-        Bf/m20krsdgAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAM1JREFUOE+l
+        kjsKwkAURQc/rY2gWFhJ9qGLEBSsxMLgFmwFFWxipaI7cAsWLssmnolXYsgEZvDAAe99b0ISY1ykadrA
+        lqIfHBjiGQ+4xQR32NaKGxYWuMa6qgxyH+/YU1WEwQATxRLMunhTLMJgjx1FJ8ztXUWKOZQn/ayEnRFO
+        FHM8D9uXOVXMofzrtn1e2FWxDEP7V22wqSqDHOETV6rcsGCf64Lfj+SI9pFifOFMq9WwVPo8yWNdIFYV
+        xs8FlqrC4OAcH1hTFcbnoDFvAAXXoCr4RHsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="saveButton.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAt0RVh0VGl0
+        bGUAU2F2ZTv56PkJAAAAWklEQVQ4T2P4//8/RRhMdEau/k8OxjCAWEDQgIMHD2LFMEDQAEKAoAHYbAdh
+        GCBoACFAOwNIxbQx4B9QAB9GVgsEuA1A56OLgzAQDCIDGpAliMQNcAPIx/8ZAGeAGHrXE6xAAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <metadata name="contextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="deleteItemToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAO1JREFUSEvt
+        lMsOgjAQRfkooS50Ae1CTXxE//8nKAVREu3VmcQgtLwWLDhJk05n5t70kQYL88TE65NJVnsKvaAWPRS6
+        0UrcMhk97Ci6mKAGtejRKrzScjupEhsjI20bXmiy8wul/kAONahFD3op5SaV0dZnMliccZmMFmeaTCYT
+        Z2omFY1pxBkywUuBCcSLycSBFcSxPNkgS9yvqxck/jlzO3Ib5zQvR5uQeAlBO9c4qtqdlEaJM5X3o0mc
+        UvWL72/iEmcGm6DQJ84MMvn97DIZ7mi5Ffrs7jDo9NmB7y784oyJxcEk4ZHChVkRBG/o/BYpfnujzAAA
+        AABJRU5ErkJggg==
 </value>
   </data>
 </root>
